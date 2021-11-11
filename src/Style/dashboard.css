@@ -1,0 +1,156 @@
+#heading{
+    font-size: 18px;
+    margin-bottom: 18px !important;
+    /* line-height: 75px; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: inherit;
+    color: #6c757D;
+}
+.verenue{
+  /* margin: 24px !important; */
+}
+.sales td{
+ font-size: 11px;
+ 
+}
+.card-title{
+  color: #6c757D;
+  font-size:15px !important;
+  /* margin: 10px 10px; */
+  font-family: Nunito, sans-serif;
+}
+.card-text-muted{
+  color: #98a6ad!important;
+  font-size: 11px;
+  font-family: Nunito, sans-serif;
+  /* margin: 10px  10px; */
+}
+.revinue-text-muted{
+  color: #98A6AD !important;
+  font-size: 11px;
+  font-family: Nunito, sans-serif;
+  margin-bottom:3px;
+}
+.text-danger{
+  font-size: 13px;
+  width: 12px;
+  /* margin-right: 3px; */
+}
+.text-success{
+  font-size: 13px;
+  width: 10px;
+  margin-right: 5px;
+}
+.number h1{
+  font-size: 16px;  
+  margin:24px 0;
+  color: #6c757D;
+}
+.card-header-new {
+    padding: 15px;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 0;
+    /* border-bottom: 1
+px
+ solid rgba(0,0,0,.125); */
+}
+.stat{
+  height: 25px;
+  width: 25px;
+}
+.stat svg{
+  height: 12px;
+  width: 12px !important;
+}
+.ct-grid {
+  stroke: rgba(0,0,0,.2);
+  stroke-width: 0.2px !important;
+
+  stroke-dasharray: 2
+px
+;
+}
+.ct-series-a .ct-point,
+.ct-series-a .ct-line,
+.ct-series-a .ct-bar,
+.ct-series-a .ct-slice-donut {
+  /* d: path("M 407.496 111.667 L 407.496 51.1808 L 413.332 51.1808 L 413.332 51.1808 L 413.332 111.667 L 413.332 111.667 Z"); */
+  stroke: rgb(227, 234, 239) !important;
+    fill-opacity: 1;
+    stroke: transparent;
+    stroke-opacity: 1;
+    stroke-linecap: square;
+    stroke-width: 6;
+    stroke-dasharray: 0;
+    clip-path: url(#gridRectMaskazjvl2q4);
+    /* filter: url(#SvgjsFilter2150); */
+}
+
+.ct-series-a .ct-slice-pie,
+.ct-series-a .ct-area {
+    fill: #1DC7EA;
+}
+
+.ct-series-b .ct-point,
+.ct-series-b .ct-line,
+.ct-series-b .ct-bar,
+.ct-series-b .ct-slice-donut {
+  stroke: #727cf5!important;
+    fill-opacity: 1;
+    stroke: transparent;
+    stroke-opacity: 1;
+    stroke-linecap: square;
+    stroke-width: 6;
+    stroke-dasharray: 0;
+}
+
+.ct-series-b .ct-slice-pie,
+.ct-series-b .ct-area {
+    fill: #FB404B;
+}
+
+.ct-series-c .ct-point,
+.ct-series-c .ct-line,
+.ct-series-c .ct-bar,
+.ct-series-c .ct-slice-donut {
+    stroke: #FFA534;
+}
+
+.ct-series-c .ct-slice-pie,
+.ct-series-c .ct-area {
+    fill: #FFA534;
+}
+
+.ct-series-d .ct-point,
+.ct-series-d .ct-line,
+.ct-series-d .ct-bar,
+.ct-series-d .ct-slice-donut {
+    stroke: #9368E9;
+}
+
+.ct-series-d .ct-slice-pie,
+.ct-series-d .ct-area {
+    fill: #9368E9;
+}
+
+.ct-series-e .ct-point,
+.ct-series-e .ct-line,
+.ct-series-e .ct-bar,
+.ct-series-e .ct-slice-donut {
+    stroke: #87CB16;
+}
+
+.ct-series-e .ct-slice-pie,
+.ct-series-e .ct-area {
+    fill: #87CB16;
+}
+
+.ct-series-f .ct-point,
+.ct-series-f .ct-line,
+.ct-series-f .ct-bar,
+.ct-series-f .ct-slice-donut {
+    stroke: #1F77D0;
+}
