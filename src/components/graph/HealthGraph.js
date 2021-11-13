@@ -10,7 +10,7 @@ const HealthGraph = () => {
         backgroundColor: [
         //   "#72A5ED",
           "#FFAF90",
-          "#3ED0C8",
+          '#3ED0C8',
           "#92001B",
           //   '#6800B4'
         ],
@@ -33,11 +33,19 @@ const HealthGraph = () => {
         <div class="card-header-new">
           <h5 class="card-title mb-0">Health</h5>
         </div>
-        <div class="card-body p-2  ">
-          <div class="align-self-center w-100 row ">
+        
+        <div class="card-body px-4 chart ">
+        <div class="col mt-9 verenue revinue-text-muted">
+                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
+                    <span class="">
+                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
+                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
+                    </span>
+                  </div>
+          <div class="align-self-center w-100  row ">
            
             <div class=" col-sm-8">
-              <div class="chart chart-xs">
+              <div class="">
                 <div>
                   <Doughnut
                     data={state}
@@ -58,8 +66,8 @@ const HealthGraph = () => {
               </div>
             </div>
             
-            <div className="d-flex col-md-4 col-sm-3">
-              <table class="table mb-0 sales">
+            <div className="d-flex col-md-4 col-sm-3 sales">
+              <table class="table mb-0 ">
                 <tbody>
                   <tr>
                     <td> Doctor</td>

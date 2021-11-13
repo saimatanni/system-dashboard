@@ -212,14 +212,14 @@ const Body = () => {
                             </div>
                           </div>
                         </div>
-                        <span class="card-text-muted">Total job circular</span>
+                        <span class="card-text-muted"> Live Job</span>
                         <h1 class="mt-1 mb-3">64</h1>
                         <div class="mb-0">
-                          <span class="text-danger">
+                          <span class="text-success">
                             {" "}
-                            <i class="mdi mdi-arrow-bottom-right"></i> -2.25%{" "}
+                            <i class="mdi mdi-arrow-bottom-right"></i> 2.25%{" "}
                           </span>
-                          <span class="card-text-muted">Since last week</span>
+                          <span class="card-text-muted">Applied Job</span>
                         </div>
                       </div>
                     </div>
@@ -262,14 +262,14 @@ const Body = () => {
                             </div>
                           </div>
                         </div>
-                        <span class="card-text-muted">Total Client</span>
+                        <span class="card-text-muted"> Live Project </span>
                         <h1 class="mt-1 mb-3">64</h1>
                         <div class="mb-0">
-                          <span class="text-danger">
+                          <span class="text-success ">
                             {" "}
-                            <i class="mdi mdi-arrow-bottom-right"></i> -2.25%{" "}
+                            <i class="mdi mdi-arrow-bottom-right"></i> 2.25%{" "}
                           </span>
-                          <span class="card-text-muted">Since last week</span>
+                          <span class="card-text-muted">Project Completed</span>
                         </div>
                       </div>
                     </div>
@@ -338,7 +338,7 @@ const Body = () => {
                             </div>
                           </div>
                         </div>
-                        <span class="card-text-muted">Total User</span>
+                        <span class="card-text-muted">Total Reader</span>
                         <h1 class="mt-1 mb-3">$21.300</h1>
                         <div class="mb-0">
                           <span class="text-success">
@@ -362,7 +362,7 @@ const Body = () => {
                             </div>
                           </div>
                         </div>
-                        <span class="card-text-muted">Total Order</span>
+                        <span class="card-text-muted">Total Recharge</span>
                         <h1 class="mt-1 mb-3">64</h1>
                         <div class="mb-0">
                           <span class="text-danger">
@@ -377,15 +377,16 @@ const Body = () => {
                 </div>
               {/* </div>
             </div> */}
-<div className="row graph">
+            {/* //////////////////1st row///////////////// */}
+<div className="row ">
 
-            <div class="col-xl-3 col-md-4 col-sm-12 col-xxl-4">
+            <div class="col-12 col-md-4 col-sm-12 col-xxl-4 col-xl-4 d-flex">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">PROJECT VS ACTUAL <span className="card-text-muted">(Bazar)</span> </h5>
                 </div>
                 
-                <div class="card-body py-3">
+                <div class="card-body chart px-4">
                 <div class="col mt-9 verenue revinue-text-muted">
                     <h5 class="card-title">Today's Earning: $2,562.30</h5>
                     <span class="">
@@ -393,7 +394,7 @@ const Body = () => {
                       <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
                     </span>
                   </div>
-                  <div class="chart chart-sm " style={{ maxWidth: "650px" }}>
+                  <div >
                     <Bar
                       className={"ct-octave"}
                       data={state}
@@ -412,12 +413,12 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 col-sm-12 col-xxl-4 col-xl-3 d-flex order-3 order-xxl-2">
+            <div class="col-12 col-md-4 col-sm-12 col-xxl-4 col-xl-4 d-flex ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">REVENUE<span className="card-text-muted">  (Parcel)</span>  </h5>
                 </div>
-                <div class="card-body px-4">
+                <div class="card-body chart px-4">
                   <div class="col mt-9 verenue revinue-text-muted">
                     <h5 class="card-title">Today's Earning: $2,562.30</h5>
                     <span class="">
@@ -434,22 +435,31 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 col-xxl-4 d-flex order-3 order-xxl-3">
-              <div class="card flex-fill w-100">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xxl-4">
+              <div class="card ">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">TOTAL SALES<span className="card-text-muted">(Ticket)</span></h5>
                 </div>
                 
-                <div class="card-body p-2 d-flex ">
-                  <div class="align-self-center w-100 row ">
-                    <div class=" col-sm-8">
-                      <div class="chart chart-xs">
+                <div class="card-body chart  px-4 ">
+                <div class="col mt-9 verenue revinue-text-muted">
+                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
+                    <span class="">
+                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
+                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
+                    </span>
+                  </div>
+                  <div class="align-self-center w-100 row mt-4">
+                    
+                    <div class=" col-sm-7 col-md-8">
+                    
+                      <div class=" ">
                         <TotalSell />
                         {/* <canvas id="chartjs-dashboard-pie"></canvas> */}
                       </div>
                     </div>
-                    <div className="d-flex col-md-4 col-sm-3"> 
-                     <table class="table mb-0 sales">
+                    <div className="d-flex col-md-4 col-sm-5 sales"> 
+                     <table class="table mb-0 ">
                       <tbody>
                         <tr>
                           <td> Direct</td>
@@ -479,30 +489,28 @@ const Body = () => {
           </div>
           
 
+          
+{/* /////////////////////2nd row/////////// */}
           <div class="row">
-        
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-3 col-lg-3 col-xxl-3 d-flex">
+            <div class="col-12 col-md-4 col-lg-4 col-xxl-4 d-flex ">
             <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">Food Graph</h5>
                 </div>
-                <div class="card-body d-flex w-100">
-                  <div class="align-self-center chart chart-lg">
+                <div class="card-body chart d-flex w-100">
+                  <div class="align-self-center chart ">
                   <FoodGraph/>
                   </div>
                 </div>
               </div>
             </div>
               
-            <div class="col-12 col-lg-4 col-xxl-3 d-flex">
+            <div class="col-12 col-lg-4 col-md-4 col-xxl-4 d-flex ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">Truck</h5>
                 </div>
-                <div class="card-body  w-100">
+                <div class="card-body chart w-100">
                 <div class="col mt-9 verenue revinue-text-muted">
                     <h5 class="card-title">Today's Earning: $2,562.30</h5>
                     <span class="">
@@ -510,18 +518,18 @@ const Body = () => {
                       <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
                     </span>
                   </div>
-                  <div class="align-self-center chart chart-lg">
+                  <div class="align-self-center chart ">
                     <TruckGraph/>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 col-xxl-3 d-flex">
+            <div class="col-12 col-md-4 col-lg-4 col-xxl-4 d-flex ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">Ride</h5>
                 </div>
-                <div class="card-body p-2 d-flex ">
+                <div class="card-body chart p-2 d-flex ">
                   <div class="align-self-center w-100 row ">
                   <div class="col mt-9 verenue revinue-text-muted">
                     <h5 class="card-title">Today's Earning: $2,562.30</h5>
@@ -531,13 +539,13 @@ const Body = () => {
                     </span>
                   </div>
                     <div class=" col-sm-8">
-                      <div class="chart chart-xs">
-                        <TotalSell />
+                      <div class=" ">
+                        <RideGraph />
                         {/* <canvas id="chartjs-dashboard-pie"></canvas> */}
                       </div>
                     </div>
-                    <div className="d-flex col-md-4 col-sm-3"> 
-                     <table class="table mb-0 sales">
+                    <div className="d-flex col-md-4 col-sm-3 sales"> 
+                     <table class="table mb-0 ">
                       <tbody>
                         <tr>
                           <td> Direct</td>
@@ -564,12 +572,22 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-3 col-xxl-3 d-flex">
+           
+          </div>
+          {/* ////////3rd row///////////////// */}
+          <div className="row">
+            <div className="col-12 col-md-4 col-lg-4 col-xxl-4 ">
+              <HealthGraph/>
+            </div>
+            <div className="col-12 col-md-4 col-lg-4 col-xxl-4 -">
+              <CareerGraph/>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xxl-4 ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">Interior</h5>
                 </div>
-                <div class="card-body  w-100">
+                <div class="card-body chart w-100">
                 <div class="col mt-9 verenue revinue-text-muted">
                     <h5 class="card-title">Today's Earning: $2,562.30</h5>
                     <span class="">
@@ -577,20 +595,11 @@ const Body = () => {
                       <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
                     </span>
                   </div>
-                  <div class="align-self-center chart chart-lg">
+                  <div class="align-self-center  ">
                     <InteriorGraph/>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          {/* ////////3rd row///////////////// */}
-          <div className="row">
-            <div className="col-12 col-md-4 col-lg-4">
-              <HealthGraph/>
-            </div>
-            <div className="col-12 col-md-4 col-lg-4">
-              <CareerGraph/>
             </div>
             <div className="col-12 col-md-4 col-lg-4">
               {/* <AppGraph/> */}

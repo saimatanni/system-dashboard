@@ -23,9 +23,9 @@ const CareerGraph = () => {
         <div>
             <div class="card flex-fill w-100">
                 <div class="card-header-new">
-                  <h5 class="card-title mb-0">REVENUE<span className="card-text-muted">  (Parcel)</span>  </h5>
+                  <h5 class="card-title mb-0">Career<span className="card-text-muted">  </span>  </h5>
                 </div>
-                <div class="card-body px-4">
+                <div class="card-body px-4 chart">
                   <div class="col mt-9 verenue revinue-text-muted">
                     <h5 class="card-title">Today's Earning: $2,562.30</h5>
                     <span class="">

@@ -13,7 +13,11 @@
 }
 .sales td{
  font-size: 11px;
+ line-height: 11px;
  
+}
+.sales table{
+  height: 10px;
 }
 .card-title{
   color: #6c757D;
@@ -154,3 +158,23 @@ px
 .ct-series-f .ct-slice-donut {
     stroke: #1F77D0;
 }
+.chart{
+  /* min-height: 100px; */
+  max-height: 450px;
+}
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
+
+@media (min-width: 1200px) { 
+  .card-title{
+    font-size: 12px !important;
+  }
+ }
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
