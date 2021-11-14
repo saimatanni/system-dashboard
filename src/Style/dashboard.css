@@ -177,13 +177,27 @@ px
 }
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
-
+  .card-text-muted{
+    font-size: 11px !important;
+  }
+  .text{
+    width: 147px;
+    /* font-size: 7px; */
+  }
  }
 
 @media (min-width: 1200px) { 
   .card-title{
     font-size: 12px !important;
   }
+  .text{
+    /* width: 120px; */
+    /* font-size: 7px; */
+  }
+  .card-text-muted{
+    font-size: 9px;
+  }
+  
  }
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  }

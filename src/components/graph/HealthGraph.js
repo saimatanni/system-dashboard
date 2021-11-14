@@ -41,8 +41,8 @@ const HealthGraph = () => {
                   </div>
           <div class="align-self-center w-100  container ">
            
-            <div >
-              <div className="container" style={{height:'80%',width:'80%'}}>
+            <div className="container">
+              <div  style={{height:'80%',width:'80%'}}>
                 <div>
                   <Doughnut
                     data={state}

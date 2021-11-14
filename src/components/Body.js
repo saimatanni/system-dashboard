@@ -365,7 +365,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Total Recharge</span>
                         <h1 class="mt-1 mb-3">64</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-danger">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> -2.25%{" "}
@@ -381,7 +381,7 @@ const Body = () => {
             {/* //////////////////1st row///////////////// */}
 <div className="row ">
 
-            <div class="col-12 col-md-4 col-sm-12 col-xxl-4 col-xl-4 d-flex">
+            <div class="col-12 col-md-12 col-sm-12 col-xxl-4 col-xl-4 d-flex">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0"> BAZAR<span className="card-text-muted">(PROJECT VS ACTUAL)</span> </h5>
@@ -411,7 +411,7 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 col-sm-12 col-xxl-4 col-xl-4 d-flex ">
+            <div class="col-12 col-md-6 col-sm-12 col-xxl-4 col-xl-4 d-flex ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">PARCEL<span className="card-text-muted">  (revenue)</span>  </h5>
@@ -430,7 +430,7 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xxl-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
               <div class="card ">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">TICKET<span className="card-text-muted">(Total sales)</span></h5>
@@ -441,11 +441,11 @@ const Body = () => {
                     <h5 class="card-title">Total Earning: $2,562.30</h5>
                    
                   </div>
-                  <div class="align-self-center w-100 container mt-4">
+                  <div class="align-self-center w-100  mt-4">
                     
                     <div className="container">
                     
-                      <div class=" "  style={{height:'70%%',width:'80%'}}>
+                      <div class=" "  style={{height:'70%',width:'80%'}}>
                         <TotalSell />
                         {/* <canvas id="chartjs-dashboard-pie"></canvas> */}
                       </div>
@@ -463,7 +463,7 @@ const Body = () => {
           
 {/* /////////////////////2nd row/////////// */}
           <div class="row">
-            <div class="col-12 col-md-4 col-lg-4 col-xxl-4 d-flex ">
+            <div class="col-12 col-md-12 col-lg-4 col-xxl-4 ">
             <div class="card flex-fill w-100">
                 <div class="card-header-new">
                 <h5 class="card-title mb-0">FOOD<span className="card-text-muted">(Weekly Sell)</span></h5>
@@ -477,7 +477,7 @@ const Body = () => {
               </div>
             </div>
               
-            <div class="col-12 col-lg-4 col-md-4 col-xxl-4 d-flex ">
+            <div class="col-12 col-lg-4 col-md-6 col-xxl-4  ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                 <h5 class="card-title mb-0">TRUCK<span className="card-text-muted">(Revenue)</span></h5>
@@ -493,14 +493,14 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 col-lg-4 col-xxl-4 d-flex ">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-4 d-flex ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                 <h5 class="card-title mb-0">RIDE<span className="card-text-muted">(Revenue)</span></h5>
                 </div>
                 <div class="card-body chart p-2 d-flex ">
                   <div class="align-self-center w-100 row ">
-                  <div class="mt-5 verenue revinue-text-muted">
+                  <div class=" verenue revinue-text-muted">
                     <h5 class="card-title">Total Earning: $2,562.30</h5>
                     
                   </div>
@@ -527,13 +527,13 @@ const Body = () => {
           </div>
           {/* ////////3rd row///////////////// */}
           <div className="row">
-            <div className="col-12 col-md-4 col-lg-4 col-xxl-4 ">
+            <div className="col-12 col-md-6 col-lg-4 col-xxl-4 container ">
               <HealthGraph/>
             </div>
-            <div className="col-12 col-md-4 col-lg-4 col-xxl-4 -">
+            <div className="col-12 col-md-6 col-lg-4 col-xxl-4 -">
               <CareerGraph/>
             </div>
-            <div class="col-12 col-md-4 col-lg-4 col-xxl-4 ">
+            <div class="col-12 col-md-12 col-lg-4 col-xxl-4 ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
                   <h5 class="card-title mb-0">Interior</h5>
@@ -549,9 +549,7 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-4">
-              {/* <AppGraph/> */}
-            </div>
+            
 
 
           </div>

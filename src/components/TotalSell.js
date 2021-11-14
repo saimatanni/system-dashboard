@@ -27,7 +27,7 @@ const TotalSell = () => {
         ]
       }
     return (
-        <div>
+        <div className="container">
               <Doughnut
           data={state}
           options={{
