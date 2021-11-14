@@ -1,22 +1,17 @@
 import React from 'react'
-import { Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 const CareerGraph = () => {
     const state = {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        labels: ["FED", "BED", "UI/UX", "SQA", "CTO", "PM"],
         datasets: [
           {
-            label: "Current Month",
+            label: "This Month",
             data: [33, 53, 85, 41, 44, 65],
-            fill: true,
+            fill: false,
             backgroundColor: "rgba(75,192,192,0.2)",
             borderColor: "rgba(75,192,192,1)"
           },
-          {
-            label: "Last Month",
-            data: [33, 25, 35, 51, 54, 76],
-            fill: false,
-            borderColor: "#742774"
-          }
+          
         ]
       };
     return (
@@ -27,17 +22,14 @@ const CareerGraph = () => {
                 </div>
                 <div class="card-body px-4 chart">
                   <div class="col mt-9 verenue revinue-text-muted">
-                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
-                    <span class="">
-                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
-                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
-                    </span>
+                    <h5 class="card-title">Total job Post: 157</h5>
+                    
                   </div>
                   <div
                   // id="world_map"
                   // style="height:350px;"
                   >
-                   <Line
+                   <Bar
           data={state}
           options={{
             title:{

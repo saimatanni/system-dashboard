@@ -3,7 +3,7 @@ import { Pie, Doughnut } from "react-chartjs-2";
 
 const HealthGraph = () => {
   const state = {
-    labels: ["Doctor", "Patient", "Packeg"],
+    labels: ["Gold", "Bronze", "Silver"],
     datasets: [
       {
         // label: 'Rainfall',
@@ -31,28 +31,25 @@ const HealthGraph = () => {
     <div>
       <div class="card flex-fill w-100">
         <div class="card-header-new">
-          <h5 class="card-title mb-0">Health</h5>
+        <h5 class="card-title mb-0">HEALTH<span className="card-text-muted">(Revenue)</span></h5>
         </div>
         
         <div class="card-body px-4 chart ">
         <div class="col mt-9 verenue revinue-text-muted">
-                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
-                    <span class="">
-                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
-                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
-                    </span>
+                    <h5 class="card-title">Total Earning: $2,562.30</h5>
+                   
                   </div>
-          <div class="align-self-center w-100  row ">
+          <div class="align-self-center w-100  container ">
            
-            <div class=" col-sm-8">
-              <div class="">
+            <div >
+              <div className="container" style={{height:'80%',width:'80%'}}>
                 <div>
                   <Doughnut
                     data={state}
                     options={{
                       title: {
                         display: true,
-                        //   text:'Average Rainfall per month',
+                    
                         fontSize: 20,
                       },
                       legend: {
@@ -66,7 +63,7 @@ const HealthGraph = () => {
               </div>
             </div>
             
-            <div className="d-flex col-md-4 col-sm-3 sales">
+            {/* <div className="d-flex col-md-4 col-sm-3 sales">
               <table class="table mb-0 ">
                 <tbody>
                   <tr>
@@ -81,13 +78,10 @@ const HealthGraph = () => {
                     <td>Packeg</td>
                     <td class="text-end">1689</td>
                   </tr>
-                  {/* <tr>
-                    <td></td>
-                    <td class="text-end">1689</td>
-                  </tr> */}
+                 
                 </tbody>
               </table>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

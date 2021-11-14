@@ -11,6 +11,12 @@
 .verenue{
   /* margin: 24px !important; */
 }
+.text{
+  width: 140px;
+}
+.graph.canvas ct-octave{
+  height: 500px;
+}
 .sales td{
  font-size: 11px;
  line-height: 11px;
@@ -161,6 +167,13 @@ px
 .chart{
   /* min-height: 100px; */
   max-height: 450px;
+  min-height: 0!important;
+  margin: auto;
+  /* min-height: 300
+px
+; */
+  position: relative;
+  width: 100%;
 }
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 

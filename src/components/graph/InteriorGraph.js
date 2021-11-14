@@ -20,14 +20,14 @@ const InteriorGraph = () => {
         ],
         datasets: [
           {
-            label: "Projection",
+            label: "This month",
             backgroundColor: "#6C4B6D",
             borderColor: "#6C4B6D",
             borderWidth: 0.2,
             data: [542, 443, 320, 780, 900, 453, 326, 434, 568, 610, 756, 895],
           },
           {
-            label: "actual",
+            label: "last month",
             backgroundColor: "#FFF9E3",
             borderColor: "#FFF9E3",
     
@@ -44,7 +44,7 @@ const InteriorGraph = () => {
                       options={{
                         title: {
                           display: true,
-                          text: "Average ",
+                          text: "Small ",
                           fontSize: 20,
                         },
                         legend: {

@@ -20,7 +20,7 @@ const TruckGraph = () => {
         datasets: [
           
           {
-            label: "actual",
+            label: "cost",
             backgroundColor: "#E0B0FF",
             borderColor: "#E0B0FF",
            Width:1,

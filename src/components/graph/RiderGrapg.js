@@ -1,30 +1,30 @@
 import React from 'react'
 import {Pie, Doughnut} from 'react-chartjs-2';
-const RideGraph = () => {
+const RiderGraph = () => {
     const state = {
-        labels: ['cng', 'Bike', 'Car',
-                 ],
+        labels: ['User', 'Rider'],
+               
         datasets: [
           {
             // label: 'Rainfall',
             backgroundColor: [
-              // 'rgb(255, 188, 0)',
-              // '#E0B0FF',
-              'rgb(10, 207, 151)',
-              '#92001B',
-              '#6800B4'
+              'rgb(255, 188, 0)',
+              '#E0B0FF',
+            //   'rgb(10, 207, 151)',
+            //   '#92001B',
+            //   '#6800B4'
             ],
             // borderWidth:7,
-            borderHeight:10,
+            borderHeight:7,
             hoverBackgroundColor: [
-            // 'rgb(255, 188, 3)',
-            // '#E0B0FF',
-            'rgb(10, 207, 151)',
+            'rgb(255, 188, 3)',
+            '#E0B0FF',
+            // 'rgb(10, 207, 151)',
             // '#6800B4',
-            '#A6002F',
-            '#35014F'
+            // '#A6002F',
+            // '#35014F'
             ],
-            data: [45, 59, 40, ]
+            data: [65, 35]
           }
         ]
       }
@@ -35,7 +35,7 @@ const RideGraph = () => {
           options={{
             title:{
               display:true,
-       
+            //   text:'Average Rainfall per month',
               fontSize:20
             },
             legend:{
@@ -48,4 +48,4 @@ const RideGraph = () => {
     )
 }
 
-export default RideGraph
+export default RiderGraph

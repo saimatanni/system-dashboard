@@ -17,6 +17,7 @@ import InteriorGraph from "./graph/InteriorGraph";
 import HealthGraph from "./graph/HealthGraph";
 import CareerGraph from "./graph/CareerGraph";
 import AppGraph from "./graph/AppGraph";
+import RiderGraph from "./graph/RiderGrapg";
 // import App from "./graph/App";
 
 
@@ -38,14 +39,14 @@ const Body = () => {
     ],
     datasets: [
       {
-        label: "Projection",
+        label: "cost",
         backgroundColor: "rgb(227, 234, 239)",
         borderColor: "rgb(227, 234, 239)",
         borderWidth: 0.2,
         data: [542, 443, 320, 780, 900, 453, 326, 434, 568, 610, 756, 895],
       },
       {
-        label: "actual",
+        label: "sell",
         backgroundColor: "#727cf5",
         borderColor: "#727cf5",
 
@@ -86,7 +87,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Total Order</span>
                         <h1 class="mt-1 mb-3">2382</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-danger">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> -3.65%{" "}
@@ -111,7 +112,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Total Parcel</span>
                         <h1 class="mt-1 mb-3">14212</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-success">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i>5.25%{" "}
@@ -138,7 +139,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Total Order</span>
                         <h1 class="mt-1 mb-3">$21.300</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-danger">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> -6.65%{" "}
@@ -162,7 +163,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Total Users</span>
                         <h1 class="mt-1 mb-3">64</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-danger">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> -2.25%{" "}
@@ -190,7 +191,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Ticket Purches</span>
                         <h1 class="mt-1 mb-3">$21.300</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-success">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> 6.65%{" "}
@@ -214,7 +215,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted"> Live Job</span>
                         <h1 class="mt-1 mb-3">64</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-success">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> 2.25%{" "}
@@ -240,7 +241,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">App Download</span>
                         <h1 class="mt-1 mb-3">$21.300</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-success">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> 6.65%{" "}
@@ -264,7 +265,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted"> Live Project </span>
                         <h1 class="mt-1 mb-3">64</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-success ">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> 2.25%{" "}
@@ -290,7 +291,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Total Booking</span>
                         <h1 class="mt-1 mb-3">$21.300</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-success">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> 6.65%{" "}
@@ -314,7 +315,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Total Ride Sharing</span>
                         <h1 class="mt-1 mb-3">64</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-danger">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> -2.25%{" "}
@@ -340,7 +341,7 @@ const Body = () => {
                         </div>
                         <span class="card-text-muted">Total Reader</span>
                         <h1 class="mt-1 mb-3">$21.300</h1>
-                        <div class="mb-0">
+                        <div class="mb-0 text">
                           <span class="text-success">
                             {" "}
                             <i class="mdi mdi-arrow-bottom-right"></i> 6.65%{" "}
@@ -383,26 +384,23 @@ const Body = () => {
             <div class="col-12 col-md-4 col-sm-12 col-xxl-4 col-xl-4 d-flex">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
-                  <h5 class="card-title mb-0">PROJECT VS ACTUAL <span className="card-text-muted">(Bazar)</span> </h5>
+                  <h5 class="card-title mb-0"> BAZAR<span className="card-text-muted">(PROJECT VS ACTUAL)</span> </h5>
                 </div>
                 
                 <div class="card-body chart px-4">
                 <div class="col mt-9 verenue revinue-text-muted">
-                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
-                    <span class="">
-                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
-                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
-                    </span>
+                    <h5 class="card-title">Total Earning: $2,562.30</h5>
+                    
                   </div>
-                  <div >
+                  <div className="graph" style={{height:'100%',}}>
                     <Bar
                       className={"ct-octave"}
                       data={state}
                       options={{
                         title: {
                           display: true,
-                          text: "Average ",
-                          fontSize: 20,
+                          text: "small ",
+                          fontSize: 10,
                         },
                         legend: {
                           display: true,
@@ -416,15 +414,12 @@ const Body = () => {
             <div class="col-12 col-md-4 col-sm-12 col-xxl-4 col-xl-4 d-flex ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
-                  <h5 class="card-title mb-0">REVENUE<span className="card-text-muted">  (Parcel)</span>  </h5>
+                  <h5 class="card-title mb-0">PARCEL<span className="card-text-muted">  (revenue)</span>  </h5>
                 </div>
                 <div class="card-body chart px-4">
                   <div class="col mt-9 verenue revinue-text-muted">
-                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
-                    <span class="">
-                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
-                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
-                    </span>
+                    <h5 class="card-title">Total Earning: $2,562.30</h5>
+                   
                   </div>
                   <div
                   // id="world_map"
@@ -438,48 +433,24 @@ const Body = () => {
             <div class="col-sm-12 col-md-4 col-lg-4 col-xxl-4">
               <div class="card ">
                 <div class="card-header-new">
-                  <h5 class="card-title mb-0">TOTAL SALES<span className="card-text-muted">(Ticket)</span></h5>
+                  <h5 class="card-title mb-0">TICKET<span className="card-text-muted">(Total sales)</span></h5>
                 </div>
                 
                 <div class="card-body chart  px-4 ">
                 <div class="col mt-9 verenue revinue-text-muted">
-                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
-                    <span class="">
-                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
-                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
-                    </span>
+                    <h5 class="card-title">Total Earning: $2,562.30</h5>
+                   
                   </div>
-                  <div class="align-self-center w-100 row mt-4">
+                  <div class="align-self-center w-100 container mt-4">
                     
-                    <div class=" col-sm-7 col-md-8">
+                    <div className="container">
                     
-                      <div class=" ">
+                      <div class=" "  style={{height:'70%%',width:'80%'}}>
                         <TotalSell />
                         {/* <canvas id="chartjs-dashboard-pie"></canvas> */}
                       </div>
                     </div>
-                    <div className="d-flex col-md-4 col-sm-5 sales"> 
-                     <table class="table mb-0 ">
-                      <tbody>
-                        <tr>
-                          <td> Direct</td>
-                          <td class="text-end">4306</td>
-                        </tr>
-                        <tr>
-                          <td>Affilliate</td>
-                          <td class="text-end">3801</td>
-                        </tr>
-                        <tr>
-                          <td>Sponsored</td>
-                          <td class="text-end">1689</td>
-                        </tr>
-                        <tr>
-                          <td>E-mail</td>
-                          <td class="text-end">1689</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    </div>
+                   
 
                     
                   </div>
@@ -495,10 +466,11 @@ const Body = () => {
             <div class="col-12 col-md-4 col-lg-4 col-xxl-4 d-flex ">
             <div class="card flex-fill w-100">
                 <div class="card-header-new">
-                  <h5 class="card-title mb-0">Food Graph</h5>
+                <h5 class="card-title mb-0">FOOD<span className="card-text-muted">(Weekly Sell)</span></h5>
                 </div>
-                <div class="card-body chart d-flex w-100">
-                  <div class="align-self-center chart ">
+                <div class="card-body chart  ">
+                <h5 class="card-title">Total Earning: $2,562.30</h5>
+                  <div class="align-self-center  ">
                   <FoodGraph/>
                   </div>
                 </div>
@@ -508,15 +480,12 @@ const Body = () => {
             <div class="col-12 col-lg-4 col-md-4 col-xxl-4 d-flex ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
-                  <h5 class="card-title mb-0">Truck</h5>
+                <h5 class="card-title mb-0">TRUCK<span className="card-text-muted">(Revenue)</span></h5>
                 </div>
                 <div class="card-body chart w-100">
                 <div class="col mt-9 verenue revinue-text-muted">
-                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
-                    <span class="">
-                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
-                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
-                    </span>
+                    <h5 class="card-title">Total Earning: $2,562.30</h5>
+                   
                   </div>
                   <div class="align-self-center chart ">
                     <TruckGraph/>
@@ -527,45 +496,27 @@ const Body = () => {
             <div class="col-12 col-md-4 col-lg-4 col-xxl-4 d-flex ">
               <div class="card flex-fill w-100">
                 <div class="card-header-new">
-                  <h5 class="card-title mb-0">Ride</h5>
+                <h5 class="card-title mb-0">RIDE<span className="card-text-muted">(Revenue)</span></h5>
                 </div>
                 <div class="card-body chart p-2 d-flex ">
                   <div class="align-self-center w-100 row ">
-                  <div class="col mt-9 verenue revinue-text-muted">
-                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
-                    <span class="">
-                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
-                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
-                    </span>
+                  <div class="mt-5 verenue revinue-text-muted">
+                    <h5 class="card-title">Total Earning: $2,562.30</h5>
+                    
                   </div>
-                    <div class=" col-sm-8">
+                    <div class="col-6 col-sm-6 col-md-6">
                       <div class=" ">
                         <RideGraph />
                         {/* <canvas id="chartjs-dashboard-pie"></canvas> */}
                       </div>
                     </div>
-                    <div className="d-flex col-md-4 col-sm-3 sales"> 
-                     <table class="table mb-0 ">
-                      <tbody>
-                        <tr>
-                          <td> Direct</td>
-                          <td class="text-end">4306</td>
-                        </tr>
-                        <tr>
-                          <td>Affilliate</td>
-                          <td class="text-end">3801</td>
-                        </tr>
-                        <tr>
-                          <td>Sponsored</td>
-                          <td class="text-end">1689</td>
-                        </tr>
-                        <tr>
-                          <td>E-mail</td>
-                          <td class="text-end">1689</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="col-6 col-sm-6 col-md-6">
+                      <div class=" ">
+                        <RiderGraph />
+                        {/* <canvas id="chartjs-dashboard-pie"></canvas> */}
+                      </div>
                     </div>
+                  
 
                     
                   </div>
@@ -589,11 +540,8 @@ const Body = () => {
                 </div>
                 <div class="card-body chart w-100">
                 <div class="col mt-9 verenue revinue-text-muted">
-                    <h5 class="card-title">Today's Earning: $2,562.30</h5>
-                    <span class="">
-                      Etiam ultricies nisi vel augue. Curabitur ullamcorper{" "}
-                      <br /> ultricies nisi. Nam eget dui. Etiam rhoncus...
-                    </span>
+                    <h5 class="card-title">Total Earning: $2,562.30</h5>
+                   
                   </div>
                   <div class="align-self-center  ">
                     <InteriorGraph/>

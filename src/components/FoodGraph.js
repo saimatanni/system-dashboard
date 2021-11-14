@@ -7,13 +7,13 @@ const FoodGraph = () => {
                  
         datasets: [
           {
-            label: 'Current Week',
+            label: 'This Week',
             fill: false,
             lineTension: 0.5,
             backgroundColor: '#B97465',
 			borderColor: 'rgb(250, 92, 124)',
             borderWidth: 1,
-            data: [10, 20,15, 25,20, 30, 20],
+            data: [0, 20,15, 25,25, 10, 40],
             // opacity: 1,
             // width: 2,
             // dasharray: 0,
